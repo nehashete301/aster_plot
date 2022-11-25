@@ -13,7 +13,7 @@ looker.plugins.visualizations.add({
       type: "string",
       label: "Custom keyword to search for",
       placeholder: "Enter row value to display score"
-    },
+    }, 
     label_value: {
       section: "Data",
       order: 3,
