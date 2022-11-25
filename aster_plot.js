@@ -380,7 +380,7 @@ looker.plugins.visualizations.add({
         .attr("data-legend",function(d) { return d.data.label }) // for legend
         .attr("fill", function(d) { return d.data.color })
         .attr("class", "solidArc")
-        .attr("stroke", "gray")
+        .attr("stroke-opacity", 0)
         .attr("d", arc)
         .on('mouseover', tip.show)
         .on('mouseout', tip.hide);
@@ -391,7 +391,7 @@ looker.plugins.visualizations.add({
         .data(pie(data))
         .enter().append("path")
         .attr("fill", "none")
-        .attr("stroke", "gray")
+        .attr("stroke-opacity", 0)
         .attr("class", "outlineArc")
         .attr("d", outlineArc)
         // Create the new invisible arcs and flip the direction for the bottom half labels
